@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- navbar starts  -->
+
+     <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/project2.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="/Images/starbucks logo2.jpeg" height="90px" alt="Starbucks">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/Project1.html" class="nav-link px-2 link-dark">Home</a></li>
+                <li><a href="/features.html" class="nav-link px-2 link-dark">Features</a></li>
+                <li><a href="/pricing.html" class="nav-link px-2 link-dark">Pricing</a></li>
+                <li><a href="/faq.html" class="nav-link px-2 link-secondary">FAQs</a></li>
+                <li><a href="/About.html" class="nav-link px-2 link-dark">About</a></li>
+            </ul>
+
+            <div class="mx-2">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">Login</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">Signup</button>
+            </div>
+        </header>
+    </div>
+
+    <!-- model start  -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to StarBucks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to StarBucks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- model end  -->
+
+    <center>
+        <h1>StarBucks Corporation</h1>
+        <img src="/Images/logo3.png" alt="">
+        <p>Logo since 2011</p>
+        <!-- <img src="/Images/250px-Starbuckscenter.webp" alt="">
+        <p>Headquarters at Starbucks Center in Seattle, Washington</p> -->
+        <table border="2">
+            <tr>
+                <th>Type</th>
+                <td>Public</td>
+            </tr>
+            <tr>
+                <th>Industry</th>
+                <td>Coffee Shop</td>
+            </tr>
+            <tr>
+                <th>Founded</th>
+                <td>March 30, 1971; 51 years ago</td>
+            </tr>
+            <tr>
+                <th>Founders</th>
+                <td>Jerry Baldwin,Zev Siegel</td>
+            </tr>
+            <tr>
+                <th>Headquarters</th>
+                <td>Seattle, Washington, U.S.</td>
+            </tr>
+            <tr>
+                <th>Number of locations</th>
+                <td>35,711 (2022)</td>
+            </tr>
+            <tr>
+                <th>Area served</th>
+                <td>84 countries</td>
+            </tr>
+            <tr>
+                <th>Key people</th>
+                <td>Howard Schultz</td>
+            </tr>
+            <tr>
+                <th>Products</th>
+                <td>Coffee beveragessmoothiesteabaked goodssandwiches</td>
+            </tr>
+            <tr>
+                <th>Revenue</th>
+                <td>US$32.25 billion (2022)</td>
+            </tr>
+            <tr>
+                <th>Number of employees</th>
+                <td>402,000 (2022)</td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>www.starbucks.com</td>
+            </tr>
+            
+        </table> <br> <br>
+        
+    </center>
+    <h1 style="padding: 15px;">Company overview</h1> <hr>
+    <img style="float: right;" src="/Images/250px-Starbuckscenter.webp" alt="">
+    <p style="padding: 15px;">Starbucks was founded in 1971 by Jerry Baldwin, Zev Siegl, and Gordon Bowker at Seattle's Pike Place Market. During the early 1980s, they sold the company to Howard Schultz who – after a business trip to Milan, Italy – decided to convert the coffee bean store into a coffee shop serving espresso-based drinks. As chief executive officer from 1986 to 2000, Schultz's first tenure led to an aggressive expansion of the franchise, first in Seattle, then across the West Coast of the United States. Schultz was succeeded by Orin Smith who ran the company for five years and positioned Starbucks as a large player in fair trade coffee, increasing sales to US$5 billion. Jim Donald served as chief executive officer from 2005 to 2008, orchestrating a large-scale earnings expansion. Schultz returned as CEO during the financial crisis of 2007–08 and spent the succeeding decade growing the company's market share, expanding its offerings, and reorienting the brand around corporate social responsibility. Kevin Johnson, the current CEO, succeeded Schultz in 2017. In March 2022, Starbucks announced that Schultz would return as CEO in April 2022</p>
+    <p  style="padding: 15px;">In addition to drinks and food, many stores carry Starbucks' official merchandise, such as mugs, tumblers, scoops, and coffee presses. There are also several select "Starbucks Evenings" locations that offer beer, wine, and appetizers. Starbucks-brand coffee, ice cream, and bottled cold coffee drinks are sold at grocery stores in the United States and other countries. In 2010, the company began its Starbucks Reserve program for single-origin coffees and high-end coffee shops. It planned[needs update] to open 1,000 Reserve coffee shops by the end of 2017.[5] Starbucks operates six roasteries with tasting rooms and 43 coffee bars as part of the program. The latest roastery location opened on Chicago's Magnificent Mile in November 2019, and is the world's largest Starbucks location. The company has been subject to multiple controversies related to its business practices. Conversely, its franchise has commanded substantial brand loyalty, market share, and company value.
+
+        The company is ranked 114th on the Fortune 500[6] and 288th on the Forbes Global 2000</p>
+
+        <h1  style="padding: 15px;">History</h1> <hr>
+        <h3 style="padding: 15px;">20th century</h3>
+        <p style="padding: 15px;">Starbucks originally opened in Seattle, Washington, on March 30, 1971.[8] It was founded by business partners Jerry Baldwin, Zev Siegl and Gordon Bowker who first met as students at the University of San Francisco:[9] The trio were inspired to sell high-quality coffee beans and equipment by coffee roasting entrepreneur Alfred Peet.[10] Bowker recalls that a business partner of his, Terry Heckler, thought words beginning with the letters "st" were powerful, leading the founders to create a list of words beginning with "st", hoping to find a brand name. They chose "Starbo", a mining town in the Cascade Range and from there, the group remembered "Starbuck", the name of the chief mate in the book Moby-Dick.[11] Bowker said, "Moby-Dick didn't have anything to do with Starbucks directly; it was only coincidental that the sound seemed to make sense."[11][12]
+
+            The first Starbucks store was located in Seattle at 2000 Western Avenue from 1971 to 1976. They later moved the café to 1912 Pike Place.[13] During this time, Starbucks stores sold just coffee beans and not drinks.[14] In its first two years of operation, Starbucks purchased green coffee beans from Peet's Coffee & Tea,.[15] In 1973, Alfred Peet stopped supplying Starbucks and helped train their new Roastmaster, Jim Reynolds.</p>
+            <h3 style="padding: 15px;">1980s</h3>
+            <p style="padding: 15px;">In 1984, the original owners of Starbucks, led by Jerry Baldwin, purchased Peet's Coffee.[16] By 1986, the company was operating six stores in Seattle[17] and had begun to sell espresso coffee.[18] In 1987, the original owners sold the Starbucks chain to their former director of marketing Howard Schultz, who rebranded his Il Giornale coffee outlets as Starbucks and quickly began to expand the company.[19][20] Also in 1987, Starbucks opened its first locations outside of Seattle, in Waterfront Station in Vancouver, British Columbia, and in Chicago, Illinois.[21] By 1989, there were 46 Starbucks stores located across the Pacific Northwest and Midwest, and the company was roasting more than 2,000,000 pounds (907,185 kg) of coffee annually.</p>
+            <h3 style="padding: 15px;">1990s</h3>
+            <p style="padding: 15px;">In June 1992, at the time of its initial public offering, Starbucks had 140 outlets, with revenue of US$73.5 million, up from US$1.3 million in 1987. The company's market value was US$271 million by this time.[22] The 12% portion of the company that was sold raised around US$25 million for the company, which enabled it to double its number of stores over the next two years.[23] By September 1992, Starbucks' share price had risen by 70%.
+
+                In 1994, Starbucks acquired The Coffee Connection, gaining the rights to use, make, market, and sell the "Frappuccino" beverage.[24] The beverage was introduced under the Starbucks name in 1995 and by 2012, Starbucks had annual Frappuccino sales of over US$2 billion.[24]
+                
+                In 1999, Starbucks experimented by opening eateries in the San Francisco Bay Area, under the Circadia restaurant brand.[25] At the same time, Starbucks converted its Seattle Circadia restaurant into a Café Starbucks.</p>
+                <h1 style="padding: 15px;">21st Century</h1> <hr>
+                <h3 style="padding: 15px;">2000s</h3>
+                <p style="padding: 15px;">In April 2003, Starbucks acquired Seattle's Best Coffee and Torrefazione Italia from AFC Enterprises for US$72 million. The deal only gained 150 stores for Starbucks, but according to the Seattle Post-Intelligencer, the wholesale business was more significant.[26]
+
+                    From 2005 to 2007, Howard Behar served as President of Starbucks North America.[27]
+                    
+                    In September 2006, rival Diedrich Coffee announced that it would sell most of its company-owned retail stores to Starbucks, including most locations of Oregon-based Coffee People, escalating regional coffee wars. Starbucks converted the Diedrich Coffee and Coffee People locations to Starbucks. The Coffee People locations at Portland International Airport were excluded from the sale.[28]
+                    
+                    In early 2008, Starbucks started a community website, My Starbucks Idea, designed to collect suggestions and feedback from customers. Other users could comment and vote on suggestions. Journalist Jack Schofield noted that "My Starbucks seems to be all sweetness and light at the moment, which I don't think is possible without quite a lot of censorship."[29]
+                    
+                    In March 2008, Starbucks acquired Coffee Equipment Company, which was the manufacturer of the Clover Brewing System. It began testing the "fresh-pressed" coffee system at several Starbucks locations in Seattle, California, New York, and Boston.[30]
+                    
+                    In July 2008, during the Great Recession, Starbucks announced it was closing 600 underperforming company-owned stores and cutting U.S. expansion plans amid growing economic uncertainty.[31][32] On July 29, 2008, Starbucks also cut almost 1,000 non-retail jobs as part of its bid to re-energize the brand and boost its profit. Of the new cuts, 550 of the positions were layoffs and the rest were unfilled jobs.[33]
+                    
+                    Additionally in July 2008, Starbucks announced that it would close 61 of its 84 stores in Australia in the following month.[34] Nick Wailes, an expert in strategic management of the University of Sydney, said that "Starbucks failed to truly understand Australia's café culture."[35]
+                    
+                    In January 2009, Starbucks announced the closure of an additional 300 underperforming stores and the elimination of 7,000 positions. CEO Howard Schultz also announced that he had received board approval to reduce his salary.[36] Altogether, from February 2008 to January 2009, Starbucks terminated an estimated 18,400 U.S. jobs and began closing 977 stores worldwide.[37]
+                    
+                    In August 2009, Ahold announced closures and rebranding for 43 of its licensed store Starbucks kiosks for their US-based Stop & Shop and Giant supermarkets.</p>
+
+
+         <!-- footer starts  -->
+
+         <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+              <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                  <img src="/Images/Starbucks logo.jpeg" alt="">
+                </a>
+                <p class="text-muted">© 2022</p>
+              </div>
+        
+              <div class="col mb-3">
+        
+              </div>
+        
+              <div class="col mb-3">
+                <h5>About Us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Company</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Coffee</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stories and News </a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Archive</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Relations</a></li>
+                </ul>
+              </div>
+        
+              <div class="col mb-3">
+                <h5>Careers</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Culture and Values</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">U.S Values</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">International Careers</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alumni Community</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collage Achievements Plan</a></li>
+                </ul>
+              </div>
+        
+              <div class="col mb-3">
+                <h5>Order and Pickup</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the App</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the web</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order and Pickup option</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Office and food service coffee</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+        
+          <!-- footer starts  -->
+        
+          <footer style="background-color: black; color: white;" class="py-7 py-md-9 bg-black">
+            <div class="container px-4">
+              <div class="row gx-7">
+                <div class="col-sm-4">
+        
+                  <!-- Heading -->
+                  <h5 class="text-xs text-primary">
+                    About Us
+                  </h5>
+        
+                  <!-- Text -->
+                  <p class="mb-6">
+                    Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered
+                    in Seattle, Washington. It is the world's largest coffeehouse chain.
+                  </p>
+        
+                </div>
+                <div class="col-sm-4">
+        
+                  <!-- Heading -->
+                  <h5 class="text-xs text-primary">
+                    Contact info
+                  </h5>
+        
+                  <!-- List -->
+                  <ul class="list-unstyled mb-6">
+                    <li class="d-flex mb-2">
+        
+                      1234 Altschul, Los Angeles, CA 10027-0000
+                    </li>
+                    <li class="d-flex mb-2">
+        
+                      +1 987 654 3210
+                    </li>
+                    <li class="d-flex">
+                      <a href="#">starbucks@gmail.com</a>
+                    </li>
+                  </ul>
+        
+                </div>
+                <div class="col-sm-4">
+        
+                  <!-- Heading -->
+                  <h5 class="text-xs text-primary">
+                    Opening hours
+                  </h5>
+        
+                  <!-- Text -->
+                  <div class="mb-3">
+                    <div class="text-xs">Monday - Thursday</div>
+                    <div class="font-serif">10:00 AM - 11:00 PM</div>
+                  </div>
+        
+                  <!-- Text -->
+                  <div class="mb-6">
+                    <div class="text-xs">Friday - Sunday</div>
+                    <div class="font-serif">12:00 AM - 03:00 AM</div>
+                  </div>
+        
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+        
+                  <!-- Copyright -->
+                  <div class="d-flex align-items-center">
+                    <hr class="hr-sm me-3" style="height: 1px;"> © 2021 StarBucks. All rights reserved.
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarBucks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    .one {
+      background-color: skyblue;
+      text-align: center;
+      box-shadow: 3px 3px 4px rgb(3, 3, 3);
+    }
+
+    .four {
+      background-color: pink;
+      text-align: center;
+      box-shadow: 3px 3px 4px rgb(3, 3, 3);
+    }
+
+    .color {
+      background-color: aliceblue;
+      height: 120px;
+    }
+
+    button {
+      border-radius: 30px;
+      background-color: skyblue;
+    }
+
+    button:hover {
+      background-color: rgb(102, 197, 235);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/Project1.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/Images/starbucks logo2.jpeg" height="90px" alt="Starbucks">
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/project2.html" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="/features.html" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="/pricing.html" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="/faq.html" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="/About.html" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <div class="mx-2">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#signupModal">Signup</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- model start  -->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to StarBucks</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to StarBucks</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- model end  -->
+
+
+  <center>
+    <div class="color">
+      <h2>Start fresh with Starbucks® Rewards</h2>
+      <p style="font-size: larger; font-weight: 400;">Join today to earn your way to free coffee and treats.*</p>
+    </div>
+  </center> <br> <br> <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 one">
+        <h2 style="margin-top: 170px;">New year, cool new brew</h2>
+        <p>Introducing Pistachio Cream Cold Brew—bold, smooth coffee topped with pistachio cream cold foam.</p>
+        <a href="https://www.starbucks.com/menu"><button>Try it now</button></a>
+      </div>
+      <div class="col-6 two">
+        <img style="box-shadow: 4px 4px 6px rgb(3, 3, 3);" src="/Images/coffee5.jpeg" height="450px" alt="coffee">
+      </div>
+    </div>
+  </div> <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 four">
+        <h2 style="margin-top: 170px;">Long walks with pistachio</h2>
+        <p>Keep it cozy with a Pistachio Latte finished with a brown-buttery topping. join fast</p>
+        <a href="https://www.starbucks.com/menu"><button style="background-color: pink;">Order Now</button></a>      
+      </div>
+      <div class="col-6 three">
+        <img style="box-shadow: 4px 4px 6px rgb(3, 3, 3);" src="/Images/coffee4.jpeg" height="435px" alt="starbucks">
+      </div>
+    </div>
+  </div> <br> <br>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/Images/coff.webp" height="700px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wrap your day</h5>
+          <p>Savory ingredients come together in our Bacon, Sausage & Egg Wrap for a satisfying meal on the go.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Images/coff3.jpeg" height="700px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wrap your day</h5>
+          <p>Savory ingredients come together in our Bacon, Sausage & Egg Wrap for a satisfying meal on the go.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Images/coff4.jpeg" height="700px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wrap your day</h5>
+          <p>Savory ingredients come together in our Bacon, Sausage & Egg Wrap for a satisfying meal on the go.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> <br>
+  <hr>
+
+
+  <center>
+    <h2> <i> Our Gallery </i></h2>
+    <p>Our Stores and coffee shops</p>
+  </center>
+  <hr>
+  <div class="container">
+    <img style="height: 260px;" src="/Images/coffee3.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store1.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store2.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store3.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/coffee2.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store4.jpeg" alt="">
+    <img style="height: 260px;" src="/Images/store5.jpeg" alt="">
+    <img style="height: 235px;" src="/Images/store6.jpeg" alt="">
+  </div>
+  <hr>
+
+  <h2 style="text-align: center;"> <em> Some Related Videos </em> </h2>
+  <p style="text-align: center;">Youtube Video</p>
+  <hr> <br>
+
+  <!-- youtube video  -->
+  <div class="container">
+    <iframe src="https://www.youtube.com/embed/13jhFFYCWVU" allow="fullscreen" height="300" width="360"></iframe>
+    <iframe src="https://www.youtube.com/embed/XUBeH7VQaFY" allow="fullscreen" height="300" width="360"></iframe>
+    <iframe src="https://www.youtube.com/embed/vfi1aXZ0XnE" allow="fullscreen" height="300" width="360"></iframe>
+  </div> <br> <br>
+  <hr>
+  <!-- youtube ends  -->
+
+  <h2 style="text-align: center;"> <em> Our Locations </em> </h2>
+  <p style="text-align: center;">Maps</p>
+  <hr> <br>
+
+  <!-- map start  -->
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.95806027029!2d77.60517111430441!3d12.974534318325622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167df1972acd%3A0x98842c6769535a61!2sStarbucks%20-%20Church%20Street%20(S036)!5e0!3m2!1sen!2sin!4v1673074180674!5m2!1sen!2sin"
+    width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <hr>
+
+  <!-- map end  -->
+
+  <h4 style="text-align: center;">*At participating stores.</h4> <hr>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="/Images/Starbucks logo.jpeg" alt="">
+        </a>
+        <p class="text-muted">© 2022</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>About Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Company</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Coffee</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stories and News </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Archive</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Relations</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Careers</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Culture and Values</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">U.S Values</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">International Careers</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alumni Community</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collage Achievements Plan</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Order and Pickup</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the App</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the web</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order and Pickup option</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Office and food service coffee</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- footer starts  -->
+
+  <footer style="background-color: black; color: white;" class="py-7 py-md-9 bg-black">
+    <div class="container px-4">
+      <div class="row gx-7">
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            About Us
+          </h5>
+
+          <!-- Text -->
+          <p class="mb-6">
+            Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered
+            in Seattle, Washington. It is the world's largest coffeehouse chain.
+          </p>
+
+        </div>
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            Contact info
+          </h5>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6">
+            <li class="d-flex mb-2">
+
+              1234 Altschul, Los Angeles, CA 10027-0000
+            </li>
+            <li class="d-flex mb-2">
+
+              +1 987 654 3210
+            </li>
+            <li class="d-flex">
+              <a href="#">starbucks@gmail.com</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4">
+
+          <!-- Heading -->
+          <h5 class="text-xs text-primary">
+            Opening hours
+          </h5>
+
+          <!-- Text -->
+          <div class="mb-3">
+            <div class="text-xs">Monday - Thursday</div>
+            <div class="font-serif">10:00 AM - 11:00 PM</div>
+          </div>
+
+          <!-- Text -->
+          <div class="mb-6">
+            <div class="text-xs">Friday - Sunday</div>
+            <div class="font-serif">12:00 AM - 03:00 AM</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <!-- Copyright -->
+          <div class="d-flex align-items-center">
+            <hr class="hr-sm me-3" style="height: 1px;"> © 2021 StarBucks. All rights reserved.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

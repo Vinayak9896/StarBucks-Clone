@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- navbar starts  -->
+
+     <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/project2.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="/Images/starbucks logo2.jpeg" height="90px" alt="Starbucks">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/Project1.html" class="nav-link px-2 link-dark">Home</a></li>
+                <li><a href="/features.html" class="nav-link px-2 link-dark">Features</a></li>
+                <li><a href="/pricing.html" class="nav-link px-2 link-secondary">Pricing</a></li>
+                <li><a href="/faq.html" class="nav-link px-2 link-dark">FAQs</a></li>
+                <li><a href="/About.html" class="nav-link px-2 link-dark">About</a></li>
+            </ul>
+
+            <div class="mx-2">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">Login</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">Signup</button>
+            </div>
+        </header>
+    </div>
+
+    <!-- model start  -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to StarBucks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to StarBucks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- model end  -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/coff5.jpeg" alt="">
+            <h2 class="fw-normal">Hot Coffees</h2>
+            <p>Price - 300Rs </p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/cold coffee.jpeg" alt="">
+            <h2 class="fw-normal">Cold Coffees</h2>
+            <p>Price - 250Rs</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/soft drinks.jpeg" alt="">
+            <h2 class="fw-normal">Soft Drinks</h2>
+            <p>Price - 150Rs </p>
+            
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row --> <br> <br>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/hot drinks.jpeg" alt="">
+              <h2 class="fw-normal">Hot Drinks</h2>
+              <p>Price - 220Rs</p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/sweets.jpeg" alt="">
+              <h2 class="fw-normal">Sweets</h2>
+              <p>Price - 190Rs</p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/bakery.jpeg" alt="">
+              <h2 class="fw-normal">Bakery</h2>
+              <p>Price - 270Rs</p>
+              
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row --> <br> <br>
+    
+          <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/iced tea.jpeg" alt="">
+              <h2 class="fw-normal">Iced Tea</h2>
+              <p>Price - 140Rs</p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/hot breakfast.jpeg" alt="">
+              <h2 class="fw-normal">Hot Breakfast</h2>
+              <p>Price - 350Rs </p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Images/lunch.jpeg" alt="">
+              <h2 class="fw-normal">Lunch</h2>
+              <p>Price - 300Rs </p>
+              
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+      </div>
+
+       <!-- footer starts  -->
+
+       <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <img src="/Images/Starbucks logo.jpeg" alt="">
+            </a>
+            <p class="text-muted">© 2022</p>
+          </div>
+    
+          <div class="col mb-3">
+    
+          </div>
+    
+          <div class="col mb-3">
+            <h5>About Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Company</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Coffee</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stories and News </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Archive</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">StarBucks Relations</a></li>
+            </ul>
+          </div>
+    
+          <div class="col mb-3">
+            <h5>Careers</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Culture and Values</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">U.S Values</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">International Careers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alumni Community</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collage Achievements Plan</a></li>
+            </ul>
+          </div>
+    
+          <div class="col mb-3">
+            <h5>Order and Pickup</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the App</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order on the web</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order and Pickup option</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Office and food service coffee</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    
+      <!-- footer starts  -->
+    
+      <footer style="background-color: black; color: white;" class="py-7 py-md-9 bg-black">
+        <div class="container px-4">
+          <div class="row gx-7">
+            <div class="col-sm-4">
+    
+              <!-- Heading -->
+              <h5 class="text-xs text-primary">
+                About Us
+              </h5>
+    
+              <!-- Text -->
+              <p class="mb-6">
+                Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered
+                in Seattle, Washington. It is the world's largest coffeehouse chain.
+              </p>
+    
+            </div>
+            <div class="col-sm-4">
+    
+              <!-- Heading -->
+              <h5 class="text-xs text-primary">
+                Contact info
+              </h5>
+    
+              <!-- List -->
+              <ul class="list-unstyled mb-6">
+                <li class="d-flex mb-2">
+    
+                  1234 Altschul, Los Angeles, CA 10027-0000
+                </li>
+                <li class="d-flex mb-2">
+    
+                  +1 987 654 3210
+                </li>
+                <li class="d-flex">
+                  <a href="#">starbucks@gmail.com</a>
+                </li>
+              </ul>
+    
+            </div>
+            <div class="col-sm-4">
+    
+              <!-- Heading -->
+              <h5 class="text-xs text-primary">
+                Opening hours
+              </h5>
+    
+              <!-- Text -->
+              <div class="mb-3">
+                <div class="text-xs">Monday - Thursday</div>
+                <div class="font-serif">10:00 AM - 11:00 PM</div>
+              </div>
+    
+              <!-- Text -->
+              <div class="mb-6">
+                <div class="text-xs">Friday - Sunday</div>
+                <div class="font-serif">12:00 AM - 03:00 AM</div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+    
+              <!-- Copyright -->
+              <div class="d-flex align-items-center">
+                <hr class="hr-sm me-3" style="height: 1px;"> © 2021 StarBucks. All rights reserved.
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
